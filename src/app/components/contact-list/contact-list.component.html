@@ -1,0 +1,8 @@
+<ul class="list-unstyled">
+  <li *ngFor="let contact of contacts">
+    <contact-item [firstName]="contact.firstName" [lastName]="contact.lastName"></contact-item>
+  </li>
+  <li>
+    <button (click)="addNewContact()"> Add New </button>
+  </li>
+</ul>
